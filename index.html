@@ -117,7 +117,13 @@
       h1{font-size:46px}.nav{height:66px}.booking-info,form{padding:22px}
       .whatsapp-float{right:12px;bottom:12px;padding:12px 15px;font-size:13px}
     }
-  </style>
+  
+.reviews-section{background:#fff}.reviews-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.review-card{background:#f8fbfc;border:1px solid var(--line);border-radius:20px;padding:22px}
+.stars{letter-spacing:2px;color:#d99d14;font-size:18px}.review-meta{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:16px;color:var(--muted);font-size:13px}
+.review-name{font-weight:900;color:var(--navy)}.review-empty{grid-column:1/-1;padding:28px;border:1px dashed var(--line);border-radius:20px;color:var(--muted);text-align:center}
+@media(max-width:980px){.reviews-list{grid-template-columns:1fr 1fr}}@media(max-width:640px){.reviews-list{grid-template-columns:1fr}}
+</style>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -284,7 +290,16 @@
     </div>
   </section>
 
-  <section id="faq">
+  
+<section id="reviews" class="reviews-section">
+<div class="container">
+<div class="section-head"><div><div class="kicker">Customer reviews</div><h2>Real feedback from real trips.</h2></div><p>Customers can submit a review after their trip. Only approved reviews are shown publicly.</p></div>
+<div style="display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:20px"><span class="badge">Verified trip reviews</span><a class="btn btn-dark" href="review.html">Leave a review</a></div>
+<div id="reviewsList" class="reviews-list"><div class="review-empty">No approved reviews yet.</div></div>
+</div>
+</section>
+
+<section id="faq">
     <div class="container faq">
       <div class="section-head"><div><div class="kicker">FAQ</div><h2 data-i18n="faqTitle">Before you book.</h2></div></div>
       <details><summary data-i18n="q1">Is this a private service?</summary><p data-i18n="a1">Yes. The vehicle is reserved for your booking and is not shared with unrelated passengers.</p></details>
@@ -416,6 +431,19 @@ document.getElementById("bookingForm").addEventListener("submit",e=>{
 document.getElementById("menuBtn").addEventListener("click",()=>{
   document.getElementById("book").scrollIntoView({behavior:"smooth"});
 });
+
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+async function loadApprovedReviews(){
+  try{
+    const r=await fetch('/api/reviews');
+    const data=await r.json();
+    const list=document.getElementById('reviewsList');
+    if(!Array.isArray(data)||!data.length){list.innerHTML='<div class="review-empty">No approved reviews yet.</div>';return;}
+    list.innerHTML=data.map(x=>`<article class="review-card"><div class="stars">${'★'.repeat(Math.max(1,Math.min(5,Number(x.rating)||5)))}</div><p style="line-height:1.7;color:var(--muted);margin:14px 0 0">${escapeHtml(x.comment)}</p><div class="review-meta"><span><span class="review-name">${escapeHtml(x.name||'Guest')}</span>${x.country?' · '+escapeHtml(x.country):''}</span><span>${escapeHtml(x.route||'')}</span></div></article>`).join('');
+  }catch(e){console.warn('Reviews unavailable',e);}
+}
+loadApprovedReviews();
+
 </script>
 </body>
 </html>
