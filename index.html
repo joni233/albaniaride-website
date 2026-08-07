@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071b2b">
+  <title>Albania Ride | Private Transfers & Tours in Albania</title>
+  <meta name="description" content="Private airport transfers, intercity rides and custom day trips across Albania. Professional driver, fixed quote before travel, direct WhatsApp booking.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://albaniaride.com/">
+  <meta property="og:title" content="Albania Ride | Private Transfers & Tours">
+  <meta property="og:description" content="Private rides across Albania with direct WhatsApp booking and clear pricing before travel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://albaniaride.com/">
+  <style>
+    :root{
+      --navy:#071b2b; --navy2:#0c2f42; --teal:#1eb7aa; --teal2:#8be1d8;
+      --ink:#102536; --muted:#5f7481; --bg:#f4f8f9; --card:#ffffff; --line:#dbe7ea;
+      --shadow:0 18px 50px rgba(7,27,43,.12); --radius:22px; --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+    a{text-decoration:none;color:inherit} button,input,select,textarea{font:inherit}
+    .container{width:min(var(--max),calc(100% - 32px));margin:auto}
+    .topbar{background:var(--navy);color:#dff7f4;font-size:13px}
+    .topbar .container{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:9px 0;flex-wrap:wrap}
+    .topbar a{opacity:.95}.topbar a:hover{opacity:1}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border-bottom:1px solid rgba(219,231,234,.8)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.02em}
+    .brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,var(--navy),var(--teal));display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 8px 25px rgba(30,183,170,.22)}
+    .brand small{display:block;font-weight:600;color:var(--muted);font-size:11px;letter-spacing:.04em}
+    nav{display:flex;gap:24px;align-items:center;font-weight:700;font-size:14px}
+    nav a:hover{color:#0c7f77}
+    .actions{display:flex;gap:9px;align-items:center}
+    .lang{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:white}
+    .btn{border:0;border-radius:14px;padding:12px 18px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+    .btn-primary{background:linear-gradient(135deg,var(--teal),#0d8f88);color:white;box-shadow:0 12px 28px rgba(30,183,170,.24)}
+    .btn-dark{background:var(--navy);color:white}
+    .btn-ghost{background:white;border:1px solid var(--line);color:var(--ink)}
+    .menu{display:none;background:white;border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+    .hero{background:
+      radial-gradient(circle at 80% 12%, rgba(139,225,216,.26), transparent 32%),
+      linear-gradient(135deg,#061824 0%,#0b3142 62%,#0b5960 100%); color:white;overflow:hidden}
+    .hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center;min-height:690px;padding:68px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);font-size:13px;font-weight:800;color:#dffbf8}
+    h1{font-size:clamp(44px,6vw,76px);line-height:.98;margin:22px 0 22px;letter-spacing:-.05em;max-width:780px}
+    .hero p{font-size:19px;line-height:1.6;color:#d5e5e9;max-width:680px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+    .trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;color:#d8ecef;font-size:14px}
+    .trust span{display:flex;align-items:center;gap:7px}
+    .vehicle-card{position:relative;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.18);border-radius:32px;padding:28px;min-height:470px;box-shadow:0 30px 80px rgba(0,0,0,.25)}
+    .vehicle-card:before{content:"";position:absolute;inset:18px;border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.08),transparent);pointer-events:none}
+    .car-art{height:235px;margin-top:30px;display:grid;place-items:center;position:relative}
+    .car{width:88%;height:125px;border-radius:54px 70px 34px 34px;background:linear-gradient(#fdfdfd,#dce6eb);position:relative;box-shadow:0 28px 38px rgba(0,0,0,.3), inset 0 -9px 18px rgba(30,50,60,.12)}
+    .car:before{content:"";position:absolute;left:20%;right:20%;top:-52px;height:78px;border-radius:48px 48px 12px 12px;background:linear-gradient(145deg,#dbe7ec,#f7fbfc);clip-path:polygon(14% 100%,27% 8%,72% 8%,88% 100%)}
+    .car:after{content:"";position:absolute;left:25%;right:25%;top:-43px;height:54px;background:linear-gradient(135deg,#173846,#52717d);clip-path:polygon(8% 100%,23% 8%,76% 8%,92% 100%);border-radius:20px}
+    .wheel{position:absolute;width:56px;height:56px;background:#17232b;border:11px solid #314653;border-radius:50%;bottom:-26px}
+    .wheel.left{left:14%}.wheel.right{right:14%}
+    .plate{position:absolute;left:50%;transform:translateX(-50%);bottom:20px;padding:5px 18px;border-radius:7px;background:#fff;color:#0b2330;font-weight:900;font-size:12px}
+    .fleet-note{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+    .fleet-note div{padding:14px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+    .fleet-note b{display:block;font-size:20px}.fleet-note small{color:#cbe2e6}
+    section{padding:88px 0}
+    .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px}
+    .kicker{font-weight:900;color:#0c8b83;text-transform:uppercase;letter-spacing:.12em;font-size:12px}
+    h2{font-size:clamp(32px,4vw,48px);letter-spacing:-.04em;line-height:1.06;margin:8px 0 0;color:var(--navy)}
+    .section-head p{max-width:580px;color:var(--muted);line-height:1.7;margin:0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 10px 28px rgba(7,27,43,.05)}
+    .service-icon{width:48px;height:48px;border-radius:15px;background:#e6f7f5;display:grid;place-items:center;font-size:22px;margin-bottom:18px}
+    .card h3{margin:0 0 10px;font-size:20px}.card p{color:var(--muted);line-height:1.7;margin:0}
+    .route-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .route{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;transition:.2s}
+    .route:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .route .from{font-size:12px;color:#0c8b83;font-weight:900;text-transform:uppercase}
+    .route h3{font-size:17px;margin:8px 0 5px}.route p{font-size:13px;color:var(--muted);margin:0}
+    .booking-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}
+    .booking-info{background:linear-gradient(155deg,var(--navy),#0e4d58);border-radius:28px;color:white;padding:34px}
+    .booking-info h2{color:white}.booking-info p{color:#d4e6e9;line-height:1.7}
+    .booking-points{display:grid;gap:12px;margin-top:26px}
+    .booking-points div{display:flex;gap:12px;align-items:flex-start}
+    .check{width:26px;height:26px;flex:0 0 26px;border-radius:9px;background:#d7fbf6;color:#08786f;display:grid;place-items:center;font-weight:900}
+    form{background:white;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:grid;gap:7px;font-weight:800;font-size:13px;color:#314955}
+    input,select,textarea{width:100%;border:1px solid #cbdadd;border-radius:13px;padding:13px 14px;background:#fbfdfd;color:#102536;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:#43bfb6;box-shadow:0 0 0 3px rgba(67,191,182,.12)}
+    textarea{min-height:100px;resize:vertical}.full{grid-column:1/-1}
+    .form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:18px;flex-wrap:wrap}
+    .form-note{font-size:12px;color:var(--muted);max-width:360px}
+    .status{margin-top:12px;font-size:13px;color:#0a7b73}
+    .why{background:#eaf4f5}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .why-card{padding:24px;background:white;border:1px solid var(--line);border-radius:20px}
+    .why-card strong{font-size:18px;display:block;margin-bottom:7px}.why-card span{color:var(--muted);line-height:1.6}
+    .faq{max-width:900px;margin:auto}
+    details{background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:10px}
+    summary{cursor:pointer;font-weight:900;color:var(--navy)}
+    details p{color:var(--muted);line-height:1.7;margin:12px 0 0}
+    footer{background:var(--navy);color:#d6e7ea;padding:56px 0 24px}
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+    footer h4{color:white;margin:0 0 12px}footer p,footer a{color:#bcd2d7;line-height:1.8;font-size:14px}
+    .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:18px;font-size:12px;color:#91aeb5;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#16b37d;color:white;border-radius:999px;padding:14px 18px;font-weight:900;box-shadow:0 14px 34px rgba(0,0,0,.24)}
+    .badge{display:inline-flex;padding:6px 9px;border-radius:999px;background:#edf8f7;color:#0c7c75;font-weight:800;font-size:12px}
+    @media(max-width:980px){
+      nav{display:none}.menu{display:block}.hero .container,.booking-wrap,.why-grid{grid-template-columns:1fr}
+      .hero .container{padding:52px 0}.vehicle-card{min-height:390px}.grid3{grid-template-columns:1fr 1fr}.route-grid{grid-template-columns:1fr 1fr}
+      .foot-grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}
+    }
+    @media(max-width:640px){
+      .topbar .container{justify-content:center;text-align:center}.actions .btn{display:none}
+      .hero .container{min-height:auto}.vehicle-card{display:none}
+      .grid3,.route-grid,.fields,.foot-grid{grid-template-columns:1fr}
+      section{padding:68px 0}.container{width:min(100% - 22px,var(--max))}
+      h1{font-size:46px}.nav{height:66px}.booking-info,form{padding:22px}
+      .whatsapp-float{right:12px;bottom:12px;padding:12px 15px;font-size:13px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TaxiService",
+    "name":"Albania Ride",
+    "url":"https://albaniaride.com",
+    "email":"info@albaniaride.com",
+    "telephone":"+355697227110",
+    "areaServed":"Albania",
+    "description":"Private airport transfers, intercity rides and custom tours across Albania."
+  }
+  </script>
+</head>
+<body>
+<div class="topbar">
+  <div class="container">
+    <span data-i18n="top1">Private transfers across Albania • Clear quote before travel</span>
+    <span><a href="tel:+355697227110">+355 69 722 7110</a> &nbsp;•&nbsp; <a href="mailto:info@albaniaride.com">info@albaniaride.com</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark">AR</span>
+      <span>ALBANIA RIDE<small>PRIVATE TRANSFERS & TOURS</small></span>
+    </a>
+    <nav>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#routes" data-i18n="navRoutes">Popular routes</a>
+      <a href="#book" data-i18n="navBook">Book</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="actions">
+      <select id="lang" class="lang" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="sq">AL</option>
+        <option value="it">IT</option>
+      </select>
+      <a class="btn btn-primary" href="#book" data-i18n="bookNow">Book now</a>
+      <button class="menu" id="menuBtn">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div>
+        <span class="eyebrow" data-i18n="eyebrow">🇦🇱 Local driver • Private ride • Direct booking</span>
+        <h1 data-i18n="heroTitle">Your private ride. Your schedule. One clear quote.</h1>
+        <p data-i18n="heroText">Airport transfers, intercity journeys and tailor-made day trips across Albania with a professional local driver, direct WhatsApp support and pricing confirmed before travel.</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary" data-i18n="checkPrice">Check availability</a>
+          <a id="waHero" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="trust">
+          <span>✓ <span data-i18n="trust1">Private vehicle</span></span>
+          <span>✓ <span data-i18n="trust2">Up to 4 passengers</span></span>
+          <span>✓ <span data-i18n="trust3">Airport waiting included</span></span>
+          <span>✓ <span data-i18n="trust4">No online payment required</span></span>
+        </div>
+      </div>
+      <div class="vehicle-card" aria-label="White premium electric SUV illustration">
+        <span class="badge">100% ELECTRIC • PREMIUM SUV</span>
+        <div class="car-art">
+          <div class="car">
+            <span class="wheel left"></span><span class="wheel right"></span>
+            <span class="plate">ALBANIA RIDE</span>
+          </div>
+        </div>
+        <div class="fleet-note">
+          <div><b>1–4</b><small data-i18n="passengers">Passengers</small></div>
+          <div><b>24/7</b><small data-i18n="support">Direct support</small></div>
+          <div><b>EV</b><small data-i18n="quiet">Quiet & comfortable</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="kicker" data-i18n="servicesKicker">Services</div><h2 data-i18n="servicesTitle">One driver for the whole journey.</h2></div>
+        <p data-i18n="servicesText">From airport pickup to multi-city travel, Albania Ride is built for travelers who want a private, simple and flexible way to move around Albania.</p>
+      </div>
+      <div class="grid3">
+        <article class="card"><div class="service-icon">✈️</div><h3 data-i18n="s1t">Airport transfers</h3><p data-i18n="s1d">Pickup from Tirana International Airport with flight-aware timing and direct contact with your driver.</p></article>
+        <article class="card"><div class="service-icon">🛣️</div><h3 data-i18n="s2t">Intercity transfers</h3><p data-i18n="s2d">Private point-to-point rides between Tirana, Berat, Vlorë, Himarë, Sarandë, Ksamil, Shkodër and more.</p></article>
+        <article class="card"><div class="service-icon">🏛️</div><h3 data-i18n="s3t">Custom day trips</h3><p data-i18n="s3d">Flexible sightseeing days with stops selected around your interests, timing and accommodation.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="routes" style="padding-top:20px">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="kicker" data-i18n="routesKicker">Popular routes</div><h2 data-i18n="routesTitle">Travel beyond Tirana.</h2></div>
+        <p data-i18n="routesText">Choose any route below or request a custom pickup and destination. Your quote is confirmed before you travel.</p>
+      </div>
+      <div class="route-grid">
+        <a class="route routePick" data-from="Tirana" data-to="Berat"><div class="from">TIRANA →</div><h3>Berat</h3><p>UNESCO old town • Castle</p></a>
+        <a class="route routePick" data-from="Tirana" data-to="Vlorë"><div class="from">TIRANA →</div><h3>Vlorë</h3><p>Coast • Lungomare</p></a>
+        <a class="route routePick" data-from="Tirana" data-to="Dhërmi"><div class="from">TIRANA →</div><h3>Dhërmi</h3><p>Riviera • Llogara</p></a>
+        <a class="route routePick" data-from="Tirana" data-to="Sarandë"><div class="from">TIRANA →</div><h3>Sarandë</h3><p>South coast • Riviera</p></a>
+        <a class="route routePick" data-from="Tirana" data-to="Ksamil"><div class="from">TIRANA →</div><h3>Ksamil</h3><p>Beaches • Butrint area</p></a>
+        <a class="route routePick" data-from="Tirana" data-to="Gjirokastër"><div class="from">TIRANA →</div><h3>Gjirokastër</h3><p>UNESCO stone city</p></a>
+        <a class="route routePick" data-from="Tirana" data-to="Shkodër"><div class="from">TIRANA →</div><h3>Shkodër</h3><p>North Albania</p></a>
+        <a class="route routePick" data-from="Sarandë" data-to="Himarë"><div class="from">SARANDË →</div><h3>Himarë</h3><p>Porto Palermo • Riviera</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="container booking-wrap">
+      <div class="booking-info">
+        <div class="kicker" style="color:#8be1d8" data-i18n="bookKicker">Direct booking</div>
+        <h2 data-i18n="bookTitle">Send your trip in under a minute.</h2>
+        <p data-i18n="bookText">Complete the form and WhatsApp will open with all trip details already prepared. No card payment is required to send a request.</p>
+        <div class="booking-points">
+          <div><span class="check">✓</span><span data-i18n="bp1">You receive a clear quote before confirming.</span></div>
+          <div><span class="check">✓</span><span data-i18n="bp2">Pay directly according to the agreed booking terms.</span></div>
+          <div><span class="check">✓</span><span data-i18n="bp3">Pickup details and timing are confirmed directly with your driver.</span></div>
+        </div>
+      </div>
+
+      <form id="bookingForm">
+        <div class="fields">
+          <label><span data-i18n="name">Full name</span><input id="name" required autocomplete="name"></label>
+          <label><span data-i18n="phone">Phone / WhatsApp</span><input id="phone" required autocomplete="tel"></label>
+          <label><span data-i18n="pickup">Pickup</span><input id="pickup" required placeholder="Tirana / Airport / Hotel"></label>
+          <label><span data-i18n="destination">Destination</span><input id="destination" required placeholder="Sarandë / Berat / Ksamil..."></label>
+          <label><span data-i18n="date">Date</span><input id="date" type="date" required></label>
+          <label><span data-i18n="time">Pickup time</span><input id="time" type="time" required></label>
+          <label><span data-i18n="pax">Passengers</span>
+            <select id="pax"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </label>
+          <label><span data-i18n="luggage">Luggage</span>
+            <select id="luggage"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </label>
+          <label class="full"><span data-i18n="flight">Flight number (optional)</span><input id="flight" placeholder="e.g. W4 5012"></label>
+          <label class="full"><span data-i18n="notes">Notes / stops (optional)</span><textarea id="notes" placeholder="Hotel pickup, child seat, sightseeing stops..."></textarea></label>
+        </div>
+        <div class="form-foot">
+          <span class="form-note" data-i18n="formNote">By sending the request, you agree that Albania Ride may contact you about this booking.</span>
+          <button class="btn btn-primary" type="submit" data-i18n="sendWA">Send on WhatsApp</button>
+        </div>
+        <div id="status" class="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="kicker" data-i18n="whyKicker">Why Albania Ride</div><h2 data-i18n="whyTitle">Simple, private and built around your trip.</h2></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><strong data-i18n="w1t">Private vehicle</strong><span data-i18n="w1d">No shared shuttle and no unnecessary passenger stops.</span></div>
+        <div class="why-card"><strong data-i18n="w2t">Clear quote</strong><span data-i18n="w2d">You know the agreed price before the ride starts.</span></div>
+        <div class="why-card"><strong data-i18n="w3t">Flexible itinerary</strong><span data-i18n="w3d">For custom trips, stops can be arranged around your schedule.</span></div>
+        <div class="why-card"><strong data-i18n="w4t">Direct contact</strong><span data-i18n="w4d">Speak directly with Albania Ride on WhatsApp before and during the trip.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container faq">
+      <div class="section-head"><div><div class="kicker">FAQ</div><h2 data-i18n="faqTitle">Before you book.</h2></div></div>
+      <details><summary data-i18n="q1">Is this a private service?</summary><p data-i18n="a1">Yes. The vehicle is reserved for your booking and is not shared with unrelated passengers.</p></details>
+      <details><summary data-i18n="q2">Do I need to pay online?</summary><p data-i18n="a2">No online payment is required to send a booking request. Payment terms are confirmed with you before the ride.</p></details>
+      <details><summary data-i18n="q3">Can I book a custom itinerary?</summary><p data-i18n="a3">Yes. Send the cities or stops you want to visit and Albania Ride will confirm availability and a quote.</p></details>
+      <details><summary data-i18n="q4">What happens if my flight is delayed?</summary><p data-i18n="a4">Send your flight number when booking. Pickup timing can then be coordinated directly with your driver.</p></details>
+      <details><summary data-i18n="q5">How many passengers can travel?</summary><p data-i18n="a5">The standard vehicle setup is suitable for up to 4 passengers, subject to luggage size.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="brand"><span class="brand-mark">AR</span><span style="color:white">ALBANIA RIDE<small style="color:#9fc3c9">PRIVATE TRANSFERS & TOURS</small></span></div>
+        <p data-i18n="footText">Private airport transfers, intercity journeys and tailor-made trips across Albania.</p>
+      </div>
+      <div><h4 data-i18n="contact">Contact</h4>
+        <p><a href="tel:+355697227110">+355 69 722 7110</a><br><a href="tel:+355689056391">+355 68 905 6391</a><br><a href="mailto:info@albaniaride.com">info@albaniaride.com</a></p>
+      </div>
+      <div><h4 data-i18n="legal">Legal</h4>
+        <p><a href="privacy.html" data-i18n="privacy">Privacy Policy</a><br><a href="terms.html" data-i18n="terms">Terms & Conditions</a></p>
+      </div>
+    </div>
+    <div class="copyright"><span>© 2026 Albania Ride. All rights reserved.</span><span>albaniaride.com</span></div>
+  </div>
+</footer>
+
+<a id="waFloat" class="whatsapp-float" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+const WA="355697227110";
+const waBase=`https://wa.me/${WA}`;
+document.getElementById("waHero").href=waBase+"?text="+encodeURIComponent("Hello Albania Ride, I would like to ask about a private transfer.");
+document.getElementById("waFloat").href=waBase+"?text="+encodeURIComponent("Hello Albania Ride, I would like to book a private transfer.");
+
+const translations={
+en:{
+top1:"Private transfers across Albania • Clear quote before travel",navServices:"Services",navRoutes:"Popular routes",navBook:"Book",bookNow:"Book now",
+eyebrow:"🇦🇱 Local driver • Private ride • Direct booking",heroTitle:"Your private ride. Your schedule. One clear quote.",heroText:"Airport transfers, intercity journeys and tailor-made day trips across Albania with a professional local driver, direct WhatsApp support and pricing confirmed before travel.",
+checkPrice:"Check availability",trust1:"Private vehicle",trust2:"Up to 4 passengers",trust3:"Airport waiting included",trust4:"No online payment required",passengers:"Passengers",support:"Direct support",quiet:"Quiet & comfortable",
+servicesKicker:"Services",servicesTitle:"One driver for the whole journey.",servicesText:"From airport pickup to multi-city travel, Albania Ride is built for travelers who want a private, simple and flexible way to move around Albania.",
+s1t:"Airport transfers",s1d:"Pickup from Tirana International Airport with flight-aware timing and direct contact with your driver.",s2t:"Intercity transfers",s2d:"Private point-to-point rides between Tirana, Berat, Vlorë, Himarë, Sarandë, Ksamil, Shkodër and more.",s3t:"Custom day trips",s3d:"Flexible sightseeing days with stops selected around your interests, timing and accommodation.",
+routesKicker:"Popular routes",routesTitle:"Travel beyond Tirana.",routesText:"Choose any route below or request a custom pickup and destination. Your quote is confirmed before you travel.",
+bookKicker:"Direct booking",bookTitle:"Send your trip in under a minute.",bookText:"Complete the form and WhatsApp will open with all trip details already prepared. No card payment is required to send a request.",
+bp1:"You receive a clear quote before confirming.",bp2:"Pay directly according to the agreed booking terms.",bp3:"Pickup details and timing are confirmed directly with your driver.",
+name:"Full name",phone:"Phone / WhatsApp",pickup:"Pickup",destination:"Destination",date:"Date",time:"Pickup time",pax:"Passengers",luggage:"Luggage",flight:"Flight number (optional)",notes:"Notes / stops (optional)",formNote:"By sending the request, you agree that Albania Ride may contact you about this booking.",sendWA:"Send on WhatsApp",
+whyKicker:"Why Albania Ride",whyTitle:"Simple, private and built around your trip.",w1t:"Private vehicle",w1d:"No shared shuttle and no unnecessary passenger stops.",w2t:"Clear quote",w2d:"You know the agreed price before the ride starts.",w3t:"Flexible itinerary",w3d:"For custom trips, stops can be arranged around your schedule.",w4t:"Direct contact",w4d:"Speak directly with Albania Ride on WhatsApp before and during the trip.",
+faqTitle:"Before you book.",q1:"Is this a private service?",a1:"Yes. The vehicle is reserved for your booking and is not shared with unrelated passengers.",q2:"Do I need to pay online?",a2:"No online payment is required to send a booking request. Payment terms are confirmed with you before the ride.",q3:"Can I book a custom itinerary?",a3:"Yes. Send the cities or stops you want to visit and Albania Ride will confirm availability and a quote.",q4:"What happens if my flight is delayed?",a4:"Send your flight number when booking. Pickup timing can then be coordinated directly with your driver.",q5:"How many passengers can travel?",a5:"The standard vehicle setup is suitable for up to 4 passengers, subject to luggage size.",
+footText:"Private airport transfers, intercity journeys and tailor-made trips across Albania.",contact:"Contact",legal:"Legal",privacy:"Privacy Policy",terms:"Terms & Conditions"
+},
+sq:{
+top1:"Transferta private në gjithë Shqipërinë • Çmim i konfirmuar para udhëtimit",navServices:"Shërbimet",navRoutes:"Rrugët",navBook:"Rezervo",bookNow:"Rezervo tani",
+eyebrow:"🇦🇱 Shofer lokal • Udhëtim privat • Rezervim direkt",heroTitle:"Udhëtimi yt privat. Orari yt. Një çmim i qartë.",heroText:"Transferta aeroporti, udhëtime ndërqytetëse dhe ture ditore të personalizuara në Shqipëri me shofer profesional, komunikim direkt në WhatsApp dhe çmim të konfirmuar para nisjes.",
+checkPrice:"Kontrollo disponueshmërinë",trust1:"Mjet privat",trust2:"Deri në 4 pasagjerë",trust3:"Pritje aeroporti e përfshirë",trust4:"Pa pagesë online për kërkesën",passengers:"Pasagjerë",support:"Asistencë direkte",quiet:"Qetësi & rehati",
+servicesKicker:"Shërbimet",servicesTitle:"Një shofer për të gjithë udhëtimin.",servicesText:"Nga aeroporti te udhëtimet me disa qytete, Albania Ride është për udhëtarët që duan transport privat, të thjeshtë dhe fleksibël në Shqipëri.",
+s1t:"Transferta aeroporti",s1d:"Marrje në Aeroportin Ndërkombëtar të Tiranës me koordinim sipas fluturimit dhe kontakt direkt me shoferin.",s2t:"Transferta ndërqytetëse",s2d:"Udhëtime private pikë më pikë mes Tiranës, Beratit, Vlorës, Himarës, Sarandës, Ksamilit, Shkodrës e më shumë.",s3t:"Ture ditore me porosi",s3d:"Ditë panoramike fleksibël me ndalesa sipas interesit, orarit dhe akomodimit tuaj.",
+routesKicker:"Rrugët më të kërkuara",routesTitle:"Udhëto përtej Tiranës.",routesText:"Zgjidh një nga rrugët ose dërgo pikën e nisjes dhe destinacionin tënd. Çmimi konfirmohet para udhëtimit.",
+bookKicker:"Rezervim direkt",bookTitle:"Dërgo udhëtimin në më pak se një minutë.",bookText:"Plotëso formularin dhe WhatsApp hapet me të gjitha detajet e udhëtimit gati. Nuk kërkohet kartë për të dërguar kërkesën.",
+bp1:"Merr një ofertë të qartë para konfirmimit.",bp2:"Pagesa bëhet sipas kushteve të dakordësuara të rezervimit.",bp3:"Detajet e marrjes dhe orari konfirmohen direkt me shoferin.",
+name:"Emri i plotë",phone:"Telefon / WhatsApp",pickup:"Nisja",destination:"Destinacioni",date:"Data",time:"Ora e nisjes",pax:"Pasagjerë",luggage:"Valixhe",flight:"Numri i fluturimit (opsional)",notes:"Shënime / ndalesa (opsionale)",formNote:"Duke dërguar kërkesën, pranoni që Albania Ride t'ju kontaktojë për këtë rezervim.",sendWA:"Dërgo në WhatsApp",
+whyKicker:"Pse Albania Ride",whyTitle:"Privat, i thjeshtë dhe sipas udhëtimit tënd.",w1t:"Mjet privat",w1d:"Pa shuttle të përbashkët dhe pa ndalesa të panevojshme.",w2t:"Çmim i qartë",w2d:"E dini çmimin e dakordësuar para se të nisë udhëtimi.",w3t:"Itinerar fleksibël",w3d:"Për turet e personalizuara, ndalesat organizohen sipas orarit tuaj.",w4t:"Kontakt direkt",w4d:"Komunikoni direkt me Albania Ride në WhatsApp para dhe gjatë udhëtimit.",
+faqTitle:"Para rezervimit.",q1:"A është shërbimi privat?",a1:"Po. Mjeti rezervohet për ju dhe nuk ndahet me pasagjerë të tjerë.",q2:"Duhet të paguaj online?",a2:"Jo. Nuk kërkohet pagesë online për të dërguar kërkesën. Kushtet e pagesës konfirmohen para udhëtimit.",q3:"Mund të rezervoj itinerar të personalizuar?",a3:"Po. Dërgo qytetet ose ndalesat dhe Albania Ride konfirmon disponueshmërinë dhe çmimin.",q4:"Çfarë ndodh nëse fluturimi vonohet?",a4:"Dërgo numrin e fluturimit gjatë rezervimit që ora e marrjes të koordinohet me shoferin.",q5:"Sa pasagjerë mund të udhëtojnë?",a5:"Konfigurimi standard është për deri në 4 pasagjerë, në varësi të madhësisë së bagazheve.",
+footText:"Transferta private aeroporti, udhëtime ndërqytetëse dhe ture të personalizuara në Shqipëri.",contact:"Kontakt",legal:"Ligjore",privacy:"Privatësia",terms:"Kushtet"
+},
+it:{
+top1:"Transfer privati in tutta l'Albania • Preventivo chiaro prima del viaggio",navServices:"Servizi",navRoutes:"Tratte",navBook:"Prenota",bookNow:"Prenota ora",
+eyebrow:"🇦🇱 Autista locale • Viaggio privato • Prenotazione diretta",heroTitle:"Il tuo viaggio privato. I tuoi orari. Un prezzo chiaro.",heroText:"Transfer aeroportuali, viaggi tra città e tour giornalieri su misura in Albania con autista professionale, assistenza WhatsApp diretta e prezzo confermato prima della partenza.",
+checkPrice:"Verifica disponibilità",trust1:"Veicolo privato",trust2:"Fino a 4 passeggeri",trust3:"Attesa aeroporto inclusa",trust4:"Nessun pagamento online richiesto",passengers:"Passeggeri",support:"Assistenza diretta",quiet:"Silenzioso & comodo",
+servicesKicker:"Servizi",servicesTitle:"Un autista per tutto il viaggio.",servicesText:"Dal ritiro in aeroporto ai viaggi multi-città, Albania Ride è pensato per chi cerca un modo privato, semplice e flessibile di viaggiare in Albania.",
+s1t:"Transfer aeroportuali",s1d:"Ritiro all'Aeroporto Internazionale di Tirana con coordinamento del volo e contatto diretto con l'autista.",s2t:"Transfer tra città",s2d:"Viaggi privati punto-punto tra Tirana, Berat, Valona, Himarë, Saranda, Ksamil, Scutari e altre destinazioni.",s3t:"Tour giornalieri su misura",s3d:"Giornate flessibili con soste scelte in base ai tuoi interessi, orari e alloggio.",
+routesKicker:"Tratte popolari",routesTitle:"Viaggia oltre Tirana.",routesText:"Scegli una tratta oppure richiedi un punto di partenza e una destinazione personalizzati. Il prezzo viene confermato prima del viaggio.",
+bookKicker:"Prenotazione diretta",bookTitle:"Invia il tuo viaggio in meno di un minuto.",bookText:"Compila il modulo e WhatsApp si aprirà con tutti i dettagli già pronti. Non serve una carta per inviare la richiesta.",
+bp1:"Ricevi un preventivo chiaro prima di confermare.",bp2:"Il pagamento avviene secondo i termini concordati.",bp3:"Ritiro e orari vengono confermati direttamente con l'autista.",
+name:"Nome completo",phone:"Telefono / WhatsApp",pickup:"Partenza",destination:"Destinazione",date:"Data",time:"Ora",pax:"Passeggeri",luggage:"Bagagli",flight:"Numero volo (opzionale)",notes:"Note / soste (opzionale)",formNote:"Inviando la richiesta accetti di essere contattato da Albania Ride per questa prenotazione.",sendWA:"Invia su WhatsApp",
+whyKicker:"Perché Albania Ride",whyTitle:"Semplice, privato e costruito intorno al tuo viaggio.",w1t:"Veicolo privato",w1d:"Nessuna navetta condivisa e nessuna sosta inutile.",w2t:"Preventivo chiaro",w2d:"Conosci il prezzo concordato prima dell'inizio del viaggio.",w3t:"Itinerario flessibile",w3d:"Per i tour su misura, le soste possono essere organizzate in base ai tuoi orari.",w4t:"Contatto diretto",w4d:"Parla direttamente con Albania Ride su WhatsApp prima e durante il viaggio.",
+faqTitle:"Prima di prenotare.",q1:"È un servizio privato?",a1:"Sì. Il veicolo è riservato alla tua prenotazione e non viene condiviso con altri passeggeri.",q2:"Devo pagare online?",a2:"No. Non è richiesto alcun pagamento online per inviare la richiesta. I termini di pagamento vengono confermati prima del viaggio.",q3:"Posso prenotare un itinerario personalizzato?",a3:"Sì. Invia le città o le soste desiderate e Albania Ride confermerà disponibilità e preventivo.",q4:"Cosa succede se il volo è in ritardo?",a4:"Inserisci il numero del volo nella prenotazione così l'orario di ritiro potrà essere coordinato con l'autista.",q5:"Quanti passeggeri possono viaggiare?",a5:"La configurazione standard è adatta a un massimo di 4 passeggeri, in base alle dimensioni dei bagagli.",
+footText:"Transfer aeroportuali privati, viaggi tra città e tour su misura in Albania.",contact:"Contatti",legal:"Legale",privacy:"Privacy",terms:"Termini e condizioni"
+}
+};
+
+function setLang(lang){
+  document.documentElement.lang=lang==="sq"?"sq":lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key=el.dataset.i18n;
+    if(translations[lang] && translations[lang][key]) el.textContent=translations[lang][key];
+  });
+  localStorage.setItem("ar_lang",lang);
+}
+const langSel=document.getElementById("lang");
+langSel.value=localStorage.getItem("ar_lang")||"en";
+setLang(langSel.value);
+langSel.addEventListener("change",e=>setLang(e.target.value));
+
+document.querySelectorAll(".routePick").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("pickup").value=el.dataset.from;
+    document.getElementById("destination").value=el.dataset.to;
+    document.getElementById("book").scrollIntoView({behavior:"smooth"});
+  });
+});
+
+const dateInput=document.getElementById("date");
+const today=new Date(); today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
+dateInput.min=today.toISOString().split("T")[0];
+
+document.getElementById("bookingForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const lines=[
+    "Hello Albania Ride, I would like to request a private transfer.",
+    "",
+    `Name: ${v("name")}`,
+    `Phone: ${v("phone")}`,
+    `Pickup: ${v("pickup")}`,
+    `Destination: ${v("destination")}`,
+    `Date: ${v("date")}`,
+    `Time: ${v("time")}`,
+    `Passengers: ${v("pax")}`,
+    `Luggage: ${v("luggage")}`,
+    `Flight: ${v("flight")||"-"}`,
+    `Notes: ${v("notes")||"-"}`
+  ];
+  document.getElementById("status").textContent="Opening WhatsApp…";
+  window.open(`${waBase}?text=${encodeURIComponent(lines.join("\n"))}`,"_blank");
+});
+
+document.getElementById("menuBtn").addEventListener("click",()=>{
+  document.getElementById("book").scrollIntoView({behavior:"smooth"});
+});
+</script>
+</body>
+</html>
